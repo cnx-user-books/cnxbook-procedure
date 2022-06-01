@@ -1,0 +1,25 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>FIR Filter on TI Chip</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m36463</md:content-id>
+  <md:title>FIR Filter on TI Chip</md:title>
+  <md:abstract>ELEC 301 Project Procedure Part 5: FIR Filtering</md:abstract>
+  <md:uuid>7dfef380-c51b-43ab-b131-df77e1e61223</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1166772104240">
+      <title>5. FIR Filter on the TI Chip.</title>
+      <para id="id1166778624002">To create a FIR filter which matches a desired inverse filter, use the built in MATLAB filter design program called fir2 [b = fir2(n,f,m)]. This designs an n order FIR filter which attempts to create an FIR filter whose spectrum matches a linear interpolation between input amplitudes m at frequencies f. The coefficients (b) are obtained by applying an inverse Fourier transform to m at frequencies f and multiplying by a window. In creating an inverse filter, the default Hamming window is acceptable because it provides a balance between the dynamic range and the resolution of the signal. The response of the inverse filter at different frequencies should not be so different that a huge dynamic range is required. Finally enter these coefficients into the TI chip and produce an FIR filter.</para>
+      <para id="id1166770634550">
+        <figure id="id1166770907769">
+          <media id="id1166770907769_media" alt="">
+            <image mime-type="image/png" src="../../media/graphics1.png" id="id1166770907769__onlineimage" height="514" width="627"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id1166770546598">h=fir2(62, ((10.^(linspace(0,1,length(targetfft))'))-1)/9,targetfft);</para>
+      <para id="id1166770612653"><figure id="id1166770778682"><media id="id1166770778682_media" alt=""><image mime-type="image/jpg" src="../../media/graphics2.jpg" id="id1166770778682__onlineimage" height="469" width="625"/></media></figure>The FIR2 command with 64 coefficients does an acceptable job of matching the shape of an ideal inverse filter. However, given more memory and more coefficients one could do any even better job of matching the ideal.</para>
+    </section>
+  </content>
+</document>

@@ -1,0 +1,28 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Inverting the Response</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m36551</md:content-id>
+  <md:title>Inverting the Response</md:title>
+  <md:abstract>ELEC 301 Project Procedure Part 4: Inverting the Response</md:abstract>
+  <md:uuid>42a4d382-25a4-4a55-8cb0-02b1fe679af4</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1167087151191">
+      <title>4. Inverting the Response</title>
+      <para id="id1167086060318">After smoothing and logarithmically sampling the frequency response of a speaker one only has to invert this data to create an ideal inverse filter for the speaker. Simply flip the frequency response of the loudspeaker over the frequency axis and scale it appropriately.</para>
+      <para id="id1167102961382">
+        <figure id="id1167107526991">
+          <media id="id1167107526991_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-4513.jpg" id="id1167107526991__onlineimage" height="469" width="625"/>
+          </media>
+        </figure>
+      </para>
+      <para id="id1167104121038">targetfft=(1./smoothfft);</para>
+      <para id="id1167094923780">semilogy(targetfft)</para>
+      <para id="id1167102426348">title('Ideal Inverse Filter');</para>
+      <para id="id1167117220823">xlabel('Frequency');</para>
+      <para id="id1167121332294">ylabel('Response (dB)');</para>
+    </section>
+  </content>
+</document>

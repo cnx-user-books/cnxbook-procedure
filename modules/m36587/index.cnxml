@@ -1,0 +1,28 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Sampling and Smoothing</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m36587</md:content-id>
+  <md:title>Sampling and Smoothing</md:title>
+  <md:abstract>ELEC 301 Project Procedure Part 2: Sampling and Smoothing Frequency Response</md:abstract>
+  <md:uuid>b5bcccf4-ba2a-4e2f-b345-0775059ed470</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1168781246435">
+      <title>2. Sampling and Smoothing the Response.</title>
+      <para id="id1168774925011">Next sample the frequency response logarithmically so that low frequencies will be weighted more importantly by the filter. This allows the logarithmic plot of an ideal inverse filter and the inverse filter implemented by FIR coefficients to match (rather than matching only high frequencies). Next use MATLAB’s built in Savitzky Golay [ y = sgolayfilt(x,k,f)] filter to smooth the curve so as to reduce the noise of the response. The motivation behind this was is to prevent the fir2 algorithm from trying to create an inverse filter with the inverse of the noise of the frequency response.</para>
+      <figure id="id1168776428180">
+        <media id="id1168776428180_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-add8.jpg" id="id1168776428180__onlineimage" height="469" width="625"/>
+        </media>
+      </figure>
+      <para id="id1168775434051">sampfft=thisfft(round(10.^(linspace(0,log10(length(thisfft)),1000)))); %sample fft logrithmicly at 1000 points</para>
+      <para id="id1168775435038">smoothfft=sgolayfilt(sampfft, 3, 71);</para>
+      <para id="id1168779672072">smoothfft(smoothfft&lt;0)=0; %fix smoothing errors</para>
+      <para id="id1168774853841">semilogy(smoothfft)</para>
+      <para id="id1168774440419">title('Smoothed Frequency Response');</para>
+      <para id="id1168793853260">xlabel('Frequency');</para>
+      <para id="id1168785582363">ylabel('Response (dB)');</para>
+    </section>
+  </content>
+</document>

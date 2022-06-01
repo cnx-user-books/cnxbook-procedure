@@ -1,0 +1,26 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Frequency Response</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m36489</md:content-id>
+  <md:title>Frequency Response</md:title>
+  <md:abstract>Elec 301 Project procedure part 1: Obtaining the Frequency Response</md:abstract>
+  <md:uuid>cc5728ec-87cd-4f96-b44a-0c2575b39af6</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1167845941271">
+      <title>Procedure:</title>
+      <section id="id1167847409468">
+        <title>1. Frequency response: </title>
+        <para id="id1167858998474">The frequency response of the speaker describes everything from low frequency resonance to high frequency distortion. One of the ways to find a frequency response of a speaker is to blast white noise through the speaker and record the result. White noise contains all frequencies and thus can be used to describe the speaker’s response to any input signal. To obtain the frequency response of a speaker, generate white noise and record the response and then use Matlab’s fft command and a log log plot to view the response. </para>
+        <figure id="id1167847358659">
+          <media id="id1167847358659_media" alt="">
+            <image mime-type="image/jpg" src="../../media/graphics1-734b.jpg" id="id1167847358659__onlineimage" height="469" width="625"/>
+          </media>
+        </figure>
+        <para id="id1167861609850">The resulting frequency response describes the speaker but is very noisy.</para>
+        <para id="id1167845803082"/>
+      </section>
+    </section>
+  </content>
+</document>

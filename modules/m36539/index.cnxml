@@ -1,0 +1,22 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Frequency Response Correction Verification</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m36539</md:content-id>
+  <md:title>Frequency Response Correction Verification</md:title>
+  <md:abstract>ELEC 301 Project Procedure Part 6: Verification</md:abstract>
+  <md:uuid>ad0dd480-c5e3-47fa-85ec-8619f9794bb1</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1166768205473">
+      <title>6. Verification</title>
+      <para id="id6198411">Finally to verify that the inverse filter works, play white noise through the speaker again and record the response with and without the filter.</para>
+      <figure id="id6242306">
+        <media id="id6242306_media" alt="">
+          <image mime-type="image/jpg" src="../../media/graphics1-3d5c.jpg" id="id6242306__onlineimage" height="273" width="626"/>
+        </media>
+      </figure>
+      <para id="id1166767657779">The filter isn’t able to completely flatten the frequency response but it does smooth it significantly, especially at higher frequencies.</para>
+    </section>
+  </content>
+</document>

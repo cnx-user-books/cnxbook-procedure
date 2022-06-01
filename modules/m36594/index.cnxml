@@ -1,0 +1,16 @@
+<document xmlns="http://cnx.rice.edu/cnxml">
+  <title>Low Frequency Resonance</title>
+<metadata xmlns:md="http://cnx.rice.edu/mdml">
+  <md:content-id>m36594</md:content-id>
+  <md:title>Low Frequency Resonance</md:title>
+  <md:abstract>ELEC 301 Project Procedure Part 3: Low Frequency Resonance</md:abstract>
+  <md:uuid>cc3480af-aee1-4557-9544-441c3557cdde</md:uuid>
+</metadata>
+
+<content>
+    <section id="id1171395160459">
+      <title>3. Low Frequency Resonance:</title>
+      <para id="id1171393962433">The resonant frequency of a loudspeaker is the frequency at which it is most susceptible to an electric response and any departure from this frequency causes the response to drop sharply. Because it is difficult to flatten such large peaks and valleys located next to one another, it’s necessary to highpass filter the input to remove all frequencies at and below the resonant frequency. In the exemplar speaker, the resonant frequency zone was identified by a small bump followed by sharp drop in the frequency response at ~500 Hz.</para>
+    </section>
+  </content>
+</document>
